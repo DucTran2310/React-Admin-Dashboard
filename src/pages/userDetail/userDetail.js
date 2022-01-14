@@ -3,13 +3,16 @@ import { CalendarToday, LocationSearching, MailOutline, PermIdentity, PhoneAndro
 
 import './userDetail.css'
 import img from '../../assets/img/user3.jpg'
+import { Link } from 'react-router-dom'
 
 const userDetail = () => {
   return (
     <div className="userDetail">
       <div className="userTitleContainer">
         <h1 className="userTitle">Edit User</h1>
-        <button className="userAddButton">Create</button>
+        <Link to="/newUser">
+          <button className="userAddButton">Create</button>
+        </Link>
       </div>
       <div className="userContainer">
         <div className="userShow">
