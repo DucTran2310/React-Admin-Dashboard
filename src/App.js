@@ -12,6 +12,7 @@ import './app.css'
 import Home from 'pages/homepage/Home'
 import User from 'pages/user/User'
 import UserDetail from './pages/userDetail/userDetail'
+import NewUser from 'pages/newUser/newUser'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/users" element={<User />} />
           <Route path="/user/:userId" element={<UserDetail />} />
+          <Route path="/newUser" element={<NewUser />} />
         </Routes>
       </div>
     </Router>
